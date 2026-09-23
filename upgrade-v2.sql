@@ -1,0 +1,8 @@
+-- NEON ENGLISH v2 upgrade shortcut
+-- If you already ran the original v1 SQL, the new setup.sql is now designed to upgrade it safely.
+-- Run setup.sql in full. It uses CREATE IF NOT EXISTS / ALTER IF NOT EXISTS and keeps your existing data.
+--
+-- Then confirm your owner account remains an admin:
+-- update public.profiles set is_admin=true where lower(email)=lower('YOUR-EMAIL@example.com');
+--
+-- No DROP TABLE statements are used by the v2 setup.

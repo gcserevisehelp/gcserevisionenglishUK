@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 62" role="img" aria-labelledby="title">
+  <title id="title">NEON ENGLISH</title>
+  <rect x="1" y="1" width="58" height="58" rx="15" fill="#111713"/>
+  <path d="M17 43V18h7l14 16V18h7v25h-6.7L24 26.5V43z" fill="#39ff72"/>
+  <path d="M69 22h27v6H76v7h18v6H76v7h21v6H69z" fill="#101512"/>
+  <path d="M103 22h7l19 22V22h7v32h-6.5L110 31.4V54h-7z" fill="#101512"/>
+  <path d="M143 38c0-9.8 7.7-16.8 17.7-16.8S178.4 28.2 178.4 38s-7.7 16.8-17.7 16.8S143 47.8 143 38zm28 0c0-6.1-4.4-10.4-10.3-10.4s-10.3 4.3-10.3 10.4 4.4 10.4 10.3 10.4S171 44.1 171 38z" fill="#101512"/>
+  <path d="M185 22h7l19 22V22h7v32h-6.5L192 31.4V54h-7z" fill="#101512"/>
+  <text x="225" y="35" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="800" fill="#7557ff">ENGLISH</text>
+  <path d="M225 42h67" stroke="#39ff72" stroke-width="5" stroke-linecap="round"/>
+</svg>

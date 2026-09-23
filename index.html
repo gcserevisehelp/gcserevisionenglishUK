@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="NEON ENGLISH — interactive GCSE English revision for AQA English Language and Literature.">
+  <title>NEON ENGLISH — GCSE Revision</title>
+  <link rel="icon" href="logo.svg">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="announcementBar" class="announcement-bar hidden"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="NEON ENGLISH home">
+      <img src="logo.svg" alt="NEON ENGLISH">
+    </a>
+    <button class="mobile-menu" id="mobileMenuBtn" aria-label="Open menu">☰</button>
+    <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+      <button data-nav="home">Home</button>
+      <button data-nav="courses">Courses</button>
+      <button data-nav="practice">Practice</button>
+      <button data-nav="games">Games</button>
+      <button data-nav="resources">Resources</button>
+      <button data-nav="planner">Planner</button>
+    </nav>
+    <div class="header-actions">
+      <button id="searchBtn" class="icon-btn" title="Search lessons" aria-label="Search lessons">⌕</button>
+      <button id="profileBtn" class="profile-chip" data-nav="profile">
+        <span id="profileInitials" class="profile-avatar">NE</span>
+        <span id="profileLabel">Profile</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <img class="footer-logo" src="logo.svg" alt="NEON ENGLISH">
+        <p>GCSE English revision that breaks the exam into clear, manageable steps.</p>
+        <p class="muted">Independent resource. Not affiliated with or endorsed by AQA.</p>
+      </div>
+      <div><strong>Learn</strong><a href="#courses">Courses</a><a href="#practice">Practice</a><a href="#games">Games</a></div>
+      <div><strong>Your account</strong><a href="#profile">Profile</a><a href="#planner">Revision planner</a><a href="#resources">Resources</a></div>
+      <div><strong>Owner</strong><a href="admin.html">Control Room</a><a id="supportLink" href="#">Support</a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> NEON ENGLISH</span><span>Learn • Practise • Improve</span></div>
+  </footer>
+
+  <div id="modal" class="modal hidden" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" data-close-modal aria-label="Close">×</button>
+      <div id="modalBody"></div>
+    </section>
+  </div>
+
+  <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
